@@ -1,13 +1,14 @@
 repos:
-  - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.100.0  # Use the latest stable version
+  - repo: https://github.com/actuarysailor/pre-commit-terraform
+    rev: v1.101.0  # Use the latest stable version
     hooks:
-      - id: terraform_fmt
-      - id: terraform_validate
-      - id: terraform_tflint
-      - id: terraform_docs
-      - id: terraform_checkov
-      - id: terraform_trivy
+      - id: terraform_fmt_docker
+      - id: terraform_validate_docker
+      - id: terraform_tflint_docker
+      - id: terraform_docs_docker
+      - id: terraform_checkov_docker
+      - id: terraform_trivy_docker
+      - id: infracost_breakdown_docker
 
   - repo: https://github.com/tofuutils/pre-commit-opentofu
     rev: v2.2.1  # Use the latest stable version
