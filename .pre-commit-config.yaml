@@ -14,7 +14,6 @@ repos:
       - id: terraform_docs_docker
       - id: terraform_checkov_docker
       - id: terraform_trivy_docker
-        # - id: infracost_breakdown_docker
 
   # May be easier to expand the antonbabenko repo to do this since it installs
   # all these anyways
