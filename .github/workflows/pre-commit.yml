@@ -51,7 +51,7 @@ jobs:
           extra_args: >-
             --color=always
             --show-diff-on-failure
-            --files ${{ steps.file_changes.outputs.files}}
+            --files ${{ steps.file_changes.outputs.files }}
 
       # Push fixes if pre-commit made changes
       - name: Push fixes
