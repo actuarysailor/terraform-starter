@@ -44,18 +44,20 @@ jobs:
           python-version: '3.11'
 
       - name: Execute pre-commit
+        id: pre-commit
         uses: pre-commit/action@v3.0.1
+        continue-on-error: true
         env:
           SKIP: no-commit-to-branch
         with:
           extra_args: >-
             --color=always
             --show-diff-on-failure
-            --files ${{ steps.file_changes.outputs.files }}
+            --files ${{ steps.file_changes.outputs.files}}
 
-      # Push fixes if pre-commit made changes
+      # Push fixes if pre-commit made changes (indicated by failure + file changes)
       - name: Push fixes
-        if: steps.precommit.conclusion == 'failure'
+        if: steps.pre-commit.outcome == 'failure'
         uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actor
