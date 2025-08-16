@@ -264,5 +264,7 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_instance_ip"></a> [instance\_ip](#output\_instance\_ip) | n/a |
 <!-- END_TF_DOCS -->
