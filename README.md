@@ -206,3 +206,61 @@ You're a Spacelift expert now! If you like what you've seen so far, here are som
 - learn about our native [cloud integrations](https://docs.spacelift.io/integrations/cloud-providers);
 - set up [SSO for your organization](https://docs.spacelift.io/integrations/single-sign-on);
 - start a [Spacelift agent](https://docs.spacelift.io/concepts/worker-pools) in your own infrastructure (yes, it will run on your laptop, too).
+
+<!-- BEGIN_TF_DOCS -->
+## Requirements
+
+No requirements.
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_random"></a> [random](#provider\_random) | n/a |
+| <a name="provider_spacelift"></a> [spacelift](#provider\_spacelift) | n/a |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [random_password.context-password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) | resource |
+| [random_password.stack-password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) | resource |
+| [spacelift_context.managed](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/context) | resource |
+| [spacelift_context_attachment.managed](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/context_attachment) | resource |
+| [spacelift_environment_variable.context-plaintext](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/environment_variable) | resource |
+| [spacelift_environment_variable.context-writeonly](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/environment_variable) | resource |
+| [spacelift_environment_variable.stack-plaintext](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/environment_variable) | resource |
+| [spacelift_environment_variable.stack-writeonly](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/environment_variable) | resource |
+| [spacelift_mounted_file.context-plaintext-file](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/mounted_file) | resource |
+| [spacelift_mounted_file.context-secret-file](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/mounted_file) | resource |
+| [spacelift_mounted_file.stack-plaintext-file](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/mounted_file) | resource |
+| [spacelift_mounted_file.stack-secret-file](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/mounted_file) | resource |
+| [spacelift_policy.login](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/policy) | resource |
+| [spacelift_policy.plan](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/policy) | resource |
+| [spacelift_policy.push](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/policy) | resource |
+| [spacelift_policy.trigger](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/policy) | resource |
+| [spacelift_policy_attachment.plan](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/policy_attachment) | resource |
+| [spacelift_policy_attachment.push](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/policy_attachment) | resource |
+| [spacelift_policy_attachment.trigger](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/policy_attachment) | resource |
+| [spacelift_policy_attachment.trigger-self](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/policy_attachment) | resource |
+| [spacelift_stack.managed](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/stack) | resource |
+| [spacelift_account.this](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/account) | data source |
+| [spacelift_current_stack.this](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/current_stack) | data source |
+| [spacelift_ips.ips](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/ips) | data source |
+| [spacelift_space.root](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/space) | data source |
+| [spacelift_stack.this](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/stack) | data source |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_github_app_namespace"></a> [github\_app\_namespace](#input\_github\_app\_namespace) | The namespace of the GitHub App to use for this stack | `string` | `null` | no |
+
+## Outputs
+
+No outputs.
+<!-- END_TF_DOCS -->

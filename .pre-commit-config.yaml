@@ -1,6 +1,12 @@
+# This file configures pre-commit hooks for the repository.
+# It defines the tools and checks that will run automatically before each
+# commit, helping to enforce code quality, formatting, and best practices.
+# For more information, see:
+#   https://pre-commit.com/
+---
 repos:
   - repo: https://github.com/actuarysailor/pre-commit-terraform
-    rev: v1.101.0  # Use the latest stable version
+    rev: v1.101.2-rc  # Use the latest stable version
     hooks:
       - id: terraform_fmt_docker
       - id: terraform_validate_docker
@@ -8,17 +14,19 @@ repos:
       - id: terraform_docs_docker
       - id: terraform_checkov_docker
       - id: terraform_trivy_docker
-      - id: infracost_breakdown_docker
+      # - id: infracost_breakdown_docker
 
-  - repo: https://github.com/tofuutils/pre-commit-opentofu
-    rev: v2.2.1  # Use the latest stable version
-    hooks:
-      - id: tofu_fmt
-      - id: tofu_validate
-      - id: tofu_tflint
-      - id: tofu_docs
-      - id: tofu_checkov
-      - id: tofu_trivy
+  # May be easier to expand the antonbabenko repo to do this since it installs
+  # all these anyways
+  # - repo: https://github.com/tofuutils/pre-commit-opentofu
+  #   rev: v2.2.1  # Use the latest stable version
+  #   hooks:
+  #     - id: tofu_fmt
+  #     - id: tofu_validate
+  #     - id: tofu_tflint
+  #     - id: tofu_docs
+  #     - id: tofu_checkov
+  #     - id: tofu_trivy
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0  # Use the latest stable version
