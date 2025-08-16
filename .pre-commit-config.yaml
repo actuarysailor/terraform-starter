@@ -6,8 +6,8 @@
 ---
 repos:
   - repo: https://github.com/actuarysailor/pre-commit-terraform
-  rev: 5bd3444dd3d388b03eaa68c57420b4b9e5f433a0  # Use the latest
-  # stable version
+  # Use the latest stable version
+  rev: 5bd3444dd3d388b03eaa68c57420b4b9e5f433a0
     hooks:
       - id: terraform_fmt_docker
       - id: terraform_validate_docker
