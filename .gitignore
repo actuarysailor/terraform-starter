@@ -29,3 +29,16 @@ override.tf.json
 # example: *tfplan*
 
 .DS_Store
+
+# Python virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# pre-commit local cache
+.pre-commit-cache/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
