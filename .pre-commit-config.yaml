@@ -43,5 +43,10 @@ repos:
       - id: yamllint
 
 ci:
-  skip: [terraform_fmt_docker, terraform_validate_docker, terraform_tflint_docker,
-    terraform_docs_docker, terraform_checkov_docker, terraform_trivy_docker]
+  skip:
+    - terraform_fmt_docker
+    - terraform_validate_docker
+    - terraform_tflint_docker
+    - terraform_docs_docker
+    - terraform_checkov_docker
+    - terraform_trivy_docker
