@@ -6,7 +6,7 @@
 ---
 repos:
   - repo: https://github.com/actuarysailor/pre-commit-terraform
-    rev: v1.101.2-rc  # Use the latest stable version
+    rev: 5bd3444dd3d388b03eaa68c57420b4b9e5f433a0  # Use the latest stable version
     hooks:
       - id: terraform_fmt_docker
       - id: terraform_validate_docker
@@ -41,3 +41,8 @@ repos:
     rev: v1.37.1  # Use the latest stable version
     hooks:
       - id: yamllint
+
+ci:
+  skip: [terraform_fmt_docker, terraform_validate_docker, terraform_tflint_docker,
+    terraform_docs_docker, terraform_checkov_docker, terraform_trivy_docker,
+    infracost_breakdown_docker]
