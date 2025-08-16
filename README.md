@@ -210,14 +210,18 @@ You're a Spacelift expert now! If you like what you've seen so far, here are som
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >=3.7.2 |
+| <a name="requirement_spacelift"></a> [spacelift](#requirement\_spacelift) | >=1.29.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_random"></a> [random](#provider\_random) | n/a |
-| <a name="provider_spacelift"></a> [spacelift](#provider\_spacelift) | n/a |
+| <a name="provider_random"></a> [random](#provider\_random) | 3.7.2 |
+| <a name="provider_spacelift"></a> [spacelift](#provider\_spacelift) | 1.29.0 |
 
 ## Modules
 
@@ -248,10 +252,8 @@ No modules.
 | [spacelift_policy_attachment.trigger](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/policy_attachment) | resource |
 | [spacelift_policy_attachment.trigger-self](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/policy_attachment) | resource |
 | [spacelift_stack.managed](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/stack) | resource |
-| [spacelift_account.this](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/account) | data source |
 | [spacelift_current_stack.this](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/current_stack) | data source |
 | [spacelift_ips.ips](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/ips) | data source |
-| [spacelift_space.root](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/space) | data source |
 | [spacelift_stack.this](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/data-sources/stack) | data source |
 
 ## Inputs
