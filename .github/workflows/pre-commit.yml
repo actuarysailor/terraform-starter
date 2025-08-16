@@ -55,7 +55,7 @@ jobs:
 
       # Push fixes if pre-commit made changes
       - name: Push fixes
-        if: failure()
+        if: steps.precommit.conclusion == 'failure'
         uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actor
