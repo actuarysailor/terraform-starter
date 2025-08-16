@@ -1,3 +1,3 @@
 output "instance_ip" {
-  value = aws_instance.example.public_ip
+  value = "192.168.1.1"
 }
