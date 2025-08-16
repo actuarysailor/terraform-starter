@@ -8,13 +8,13 @@ repos:
   - repo: https://github.com/actuarysailor/pre-commit-terraform
   # Use the latest stable version
   rev: 5bd3444dd3d388b03eaa68c57420b4b9e5f433a0
-    hooks:
-      - id: terraform_fmt_docker
-      - id: terraform_validate_docker
-      - id: terraform_tflint_docker
-      - id: terraform_docs_docker
-      - id: terraform_checkov_docker
-      - id: terraform_trivy_docker
+  hooks:
+    - id: terraform_fmt_docker
+    - id: terraform_validate_docker
+    - id: terraform_tflint_docker
+    - id: terraform_docs_docker
+    - id: terraform_checkov_docker
+    - id: terraform_trivy_docker
       # - id: infracost_breakdown_docker
 
   # May be easier to expand the antonbabenko repo to do this since it installs
