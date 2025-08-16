@@ -59,7 +59,8 @@ jobs:
             --show-diff-on-failure
             --files ${{ steps.file_changes.outputs.files }}
 
-      # Push fixes if pre-commit made changes (indicated by failure + file changes)
+      # Push fixes if pre-commit made changes
+      # (indicated by failure + file changes)
       - name: Push fixes
         if: steps.pre-commit.outcome == 'failure'
         uses: EndBug/add-and-commit@v9
